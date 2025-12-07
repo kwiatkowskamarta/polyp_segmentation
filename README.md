@@ -51,3 +51,20 @@ source venv/bin/activate
 ```bash
 pip install torch torchvision opencv-python matplotlib tqdm requests
 ```
+
+## Usage
+### Data Acquisition
+Run the automated script to fetch the Kvasir-SEG dataset from Simula Research Laboratory. This script handles SSL verification and unzipping automatically.
+```bash
+python download_data.py
+```
+### Training
+Initiate the training loop. By default, this is configured for 3 Epochs on 128x128 images to ensure quick validation on CPU environments.
+```bash
+python train.py
+```
+### Evaluation & Visualization
+Run inference on the validation set to calculate the Dice Score and generate comparison images.
+```bash
+python evaluate.py
+```
