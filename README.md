@@ -30,7 +30,7 @@ polyp-segmentation/
 └── README.md              # Project Documentation
 ```
 
-## ⚙️ Installation
+## Installation
 
 ### 1. Clone the Repository
 ```bash
@@ -68,3 +68,4 @@ Run inference on the validation set to calculate the Dice Score and generate com
 ```bash
 python evaluate.py
 ```
+
